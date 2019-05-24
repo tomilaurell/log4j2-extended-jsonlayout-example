@@ -1,0 +1,71 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.laurell.log4j2</groupId>
+    <artifactId>extended-jsonlayout-example</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <name>extended-jsonlayout-example</name>
+    <description>An example project how to use extended-jsonlayout</description>
+    <url>https://github.com/tomilaurell/log4j2-extended-jsonlayout-example</url>
+    <scm>
+        <url>https://github.com/tomilaurell/log4j2-extended-jsonlayout-example</url>
+        <connection>scm:git:https://github.com/tomilaurell/log4j2-extended-jsonlayout-example.git</connection>
+        <tag>HEAD</tag>
+    </scm>
+    <issueManagement>
+        <url>https://github.com/tomilaurell/log4j2-extended-jsonlayout-example/issues</url>
+        <system>GitHub</system>
+    </issueManagement>
+    <developers>
+        <developer>
+            <name>Tomi Laurell</name>
+            <email>tomi.laurell@gmail.com</email>
+            <organization>Tomi Laurell</organization>
+            <organizationUrl>https://github.com/tomilaurell</organizationUrl>
+        </developer>
+    </developers>
+    <licenses>
+        <license>
+            <name>Apache License Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+        </license>
+    </licenses>
+    <inceptionYear>2019</inceptionYear>
+
+    <properties>
+        <extended-jsonlayout-version>1.0.4</extended-jsonlayout-version>
+        <log4j2.version>2.11.2</log4j2.version>
+        <junit.version>4.12</junit.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.laurell.log4j2</groupId>
+            <artifactId>extended-jsonlayout</artifactId>
+            <version>${extended-jsonlayout-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>${log4j2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+</project>
