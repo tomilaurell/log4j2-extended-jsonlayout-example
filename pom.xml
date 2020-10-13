@@ -46,7 +46,7 @@
     <properties>
         <extended-jsonlayout-version>1.0.4</extended-jsonlayout-version>
         <log4j2.version>2.11.2</log4j2.version>
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
     </properties>
 
     <dependencies>
